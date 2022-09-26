@@ -2,7 +2,7 @@
 One Isotope Addition
 ce_v7.1
 read comp
-u-235 1 den=1 293 end
+u-235 1 den=2 293 end
 end comp
 
 read depletion
@@ -21,7 +21,7 @@ units kg
 nuclides U-235 end
 constant 1     end
 time 0.0 end
-factor 0.2 end
+factor 0.1 end
 end flow
 end timetable
 
@@ -32,7 +32,7 @@ end parm
 
 read geom
 global unit 1
-cuboid 1 0 50 0 50 0 1
+cuboid 1 0 100 0 100 0 1
 media 1 1 1 
 boundary 1
 end geom
