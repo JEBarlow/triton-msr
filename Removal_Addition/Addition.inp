@@ -1,0 +1,44 @@
+=t6-depl-shift parm=(addnux=0)
+One Isotope Addition
+ce_v7.1
+read comp
+u-235 1 den=1 293 end
+end comp
+
+read depletion
+1
+end depletion
+
+read burndata
+power=0.000001 burn=0.041667  nlib=10  end
+end burndata
+
+read timetable
+flow
+to 1
+type continuous
+units kg
+nuclides U-235 end
+constant 1     end
+time 0.0 end
+factor 0.2 end
+end flow
+end timetable
+
+read model
+read parm
+npg=100 gen=10
+end parm
+
+read geom
+global unit 1
+cuboid 1 0 50 0 50 0 1
+media 1 1 1 
+boundary 1
+end geom
+
+read bounds
+all=vacuum
+end bounds
+end model
+end
