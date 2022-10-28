@@ -22,7 +22,7 @@
 ## Multi-Isotope
 - All of the above for two isotopes (2nd is stable, Pb-210)
 - All of the above with 6 more stable isotopes, 8 total (H-1, He-4, Li-7, Be-9, B-11, C-12)
-- All of the above for two isotopes (2nd is radioactive with short half life, Xe-140 (13.6s))
+- All of the above for two isotopes (2nd is radioactive with short half life, Cs-140 (63.7s))
 - Depleted fuel (no analysis, just demonstration)
 
 ## Challange Cases
