@@ -1,0 +1,340 @@
+=t6-depl-shift parm=(addnux=1)
+One Isotope Linear
+ce_v7.1
+read comp
+u-235 1 den=10 1.0 293 end
+u-238 2 den=10 1.0 293 end
+end comp
+
+read depletion
+1 2
+end depletion
+
+read burndata
+power=0.00000001 burn=0.001953125 nlib=1  end
+power=0.00000001 burn=0.001953125 nlib=1  end
+power=0.00000001 burn=0.00390625 nlib=1  end
+power=0.00000001 burn=0.0078125 nlib=1  end
+power=0.00000001 burn=0.015625 nlib=1  end
+power=0.00000001 burn=0.03125 nlib=1  end
+power=0.00000001 burn=0.0625 nlib=1  end
+power=0.00000001 burn=0.125 nlib=1  end
+power=0.00000001 burn=0.25 nlib=1  end
+power=0.00000001 burn=0.5 nlib=1  end
+power=0.00000001 burn=1.0 nlib=1  end
+power=0.00000001 burn=2.0 nlib=1  end
+power=0.00000001 burn=4.0 nlib=1  end
+power=0.00000001 burn=8.0 nlib=1  end
+power=0.00000001 burn=16.0 nlib=1  end
+power=0.00000001 burn=32.0 nlib=1  end
+power=0.00000001 burn=64.0 nlib=1  end
+
+end burndata
+
+read timetable
+flow
+from 1
+to 2
+type fractional_removal
+units pers
+nuclides H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk end
+rates 1 1  1  1  1 1 1 1 1 1  1  1  1  1  1 1 1  1  1 1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  end
+time 0.0 end
+multiplier 0.001 end
+end flow
+end timetable
+
+read model
+read parm
+npg=100 gen=10
+end parm
+
+read geom
+global unit 1
+cuboid 1 0 100 0 100 0 10
+cuboid 2 0 100 0 100 0 20
+media 1 1 1 
+media 2 1 2 -1
+boundary 2
+end geom
+
+read bounds
+all=vacuum
+end bounds
+end model
+end
+
+=t6-depl-shift parm=(addnux=1)
+One Isotope Linear
+ce_v7.1
+read comp
+u-235 1 den=10 1.0 293 end
+u-238 2 den=10 1.0 293 end
+end comp
+
+read depletion
+1 2
+end depletion
+
+read burndata
+power=0.00000001 burn=0.0009765625 nlib=1  end
+power=0.00000001 burn=0.0009765625 nlib=1  end
+power=0.00000001 burn=0.001953125 nlib=1  end
+power=0.00000001 burn=0.00390625 nlib=1  end
+power=0.00000001 burn=0.0078125 nlib=1  end
+power=0.00000001 burn=0.015625 nlib=1  end
+power=0.00000001 burn=0.03125 nlib=1  end
+power=0.00000001 burn=0.0625 nlib=1  end
+power=0.00000001 burn=0.125 nlib=1  end
+power=0.00000001 burn=0.25 nlib=1  end
+power=0.00000001 burn=0.5 nlib=1  end
+power=0.00000001 burn=1.0 nlib=1  end
+power=0.00000001 burn=2.0 nlib=1  end
+power=0.00000001 burn=4.0 nlib=1  end
+power=0.00000001 burn=8.0 nlib=1  end
+power=0.00000001 burn=16.0 nlib=1  end
+power=0.00000001 burn=32.0 nlib=1  end
+power=0.00000001 burn=64.0 nlib=1  end
+
+end burndata
+
+read timetable
+flow
+from 1
+to 2
+type fractional_removal
+units pers
+nuclides H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk end
+rates 1 1  1  1  1 1 1 1 1 1  1  1  1  1  1 1 1  1  1 1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  end
+time 0.0 end
+multiplier 0.001 end
+end flow
+end timetable
+
+read model
+read parm
+npg=100 gen=10
+end parm
+
+read geom
+global unit 1
+cuboid 1 0 100 0 100 0 10
+cuboid 2 0 100 0 100 0 20
+media 1 1 1 
+media 2 1 2 -1
+boundary 2
+end geom
+
+read bounds
+all=vacuum
+end bounds
+end model
+end
+
+=t6-depl-shift parm=(addnux=1)
+One Isotope Linear
+ce_v7.1
+read comp
+u-235 1 den=10 1.0 293 end
+u-238 2 den=10 1.0 293 end
+end comp
+
+read depletion
+1 2
+end depletion
+
+read burndata
+power=0.00000001 burn=0.00048828125 nlib=1  end
+power=0.00000001 burn=0.00048828125 nlib=1  end
+power=0.00000001 burn=0.0009765625 nlib=1  end
+power=0.00000001 burn=0.001953125 nlib=1  end
+power=0.00000001 burn=0.00390625 nlib=1  end
+power=0.00000001 burn=0.0078125 nlib=1  end
+power=0.00000001 burn=0.015625 nlib=1  end
+power=0.00000001 burn=0.03125 nlib=1  end
+power=0.00000001 burn=0.0625 nlib=1  end
+power=0.00000001 burn=0.125 nlib=1  end
+power=0.00000001 burn=0.25 nlib=1  end
+power=0.00000001 burn=0.5 nlib=1  end
+power=0.00000001 burn=1.0 nlib=1  end
+power=0.00000001 burn=2.0 nlib=1  end
+power=0.00000001 burn=4.0 nlib=1  end
+power=0.00000001 burn=8.0 nlib=1  end
+power=0.00000001 burn=16.0 nlib=1  end
+power=0.00000001 burn=32.0 nlib=1  end
+power=0.00000001 burn=64.0 nlib=1  end
+
+end burndata
+
+read timetable
+flow
+from 1
+to 2
+type fractional_removal
+units pers
+nuclides H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk end
+rates 1 1  1  1  1 1 1 1 1 1  1  1  1  1  1 1 1  1  1 1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  end
+time 0.0 end
+multiplier 0.001 end
+end flow
+end timetable
+
+read model
+read parm
+npg=100 gen=10
+end parm
+
+read geom
+global unit 1
+cuboid 1 0 100 0 100 0 10
+cuboid 2 0 100 0 100 0 20
+media 1 1 1 
+media 2 1 2 -1
+boundary 2
+end geom
+
+read bounds
+all=vacuum
+end bounds
+end model
+end
+
+=t6-depl-shift parm=(addnux=1)
+One Isotope Linear
+ce_v7.1
+read comp
+u-235 1 den=10 1.0 293 end
+u-238 2 den=10 1.0 293 end
+end comp
+
+read depletion
+1 2
+end depletion
+
+read burndata
+power=0.00000001 burn=0.000244140625 nlib=1  end
+power=0.00000001 burn=0.000244140625 nlib=1  end
+power=0.00000001 burn=0.00048828125 nlib=1  end
+power=0.00000001 burn=0.0009765625 nlib=1  end
+power=0.00000001 burn=0.001953125 nlib=1  end
+power=0.00000001 burn=0.00390625 nlib=1  end
+power=0.00000001 burn=0.0078125 nlib=1  end
+power=0.00000001 burn=0.015625 nlib=1  end
+power=0.00000001 burn=0.03125 nlib=1  end
+power=0.00000001 burn=0.0625 nlib=1  end
+power=0.00000001 burn=0.125 nlib=1  end
+power=0.00000001 burn=0.25 nlib=1  end
+power=0.00000001 burn=0.5 nlib=1  end
+power=0.00000001 burn=1.0 nlib=1  end
+power=0.00000001 burn=2.0 nlib=1  end
+power=0.00000001 burn=4.0 nlib=1  end
+power=0.00000001 burn=8.0 nlib=1  end
+power=0.00000001 burn=16.0 nlib=1  end
+power=0.00000001 burn=32.0 nlib=1  end
+power=0.00000001 burn=64.0 nlib=1  end
+
+end burndata
+
+read timetable
+flow
+from 1
+to 2
+type fractional_removal
+units pers
+nuclides H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk end
+rates 1 1  1  1  1 1 1 1 1 1  1  1  1  1  1 1 1  1  1 1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  end
+time 0.0 end
+multiplier 0.001 end
+end flow
+end timetable
+
+read model
+read parm
+npg=100 gen=10
+end parm
+
+read geom
+global unit 1
+cuboid 1 0 100 0 100 0 10
+cuboid 2 0 100 0 100 0 20
+media 1 1 1 
+media 2 1 2 -1
+boundary 2
+end geom
+
+read bounds
+all=vacuum
+end bounds
+end model
+end
+
+=t6-depl-shift parm=(addnux=1)
+One Isotope Linear
+ce_v7.1
+read comp
+u-235 1 den=10 1.0 293 end
+u-238 2 den=10 1.0 293 end
+end comp
+
+read depletion
+1 2
+end depletion
+
+read burndata
+power=0.00000001 burn=0.0001220703125 nlib=1  end
+power=0.00000001 burn=0.0001220703125 nlib=1  end
+power=0.00000001 burn=0.000244140625 nlib=1  end
+power=0.00000001 burn=0.00048828125 nlib=1  end
+power=0.00000001 burn=0.0009765625 nlib=1  end
+power=0.00000001 burn=0.001953125 nlib=1  end
+power=0.00000001 burn=0.00390625 nlib=1  end
+power=0.00000001 burn=0.0078125 nlib=1  end
+power=0.00000001 burn=0.015625 nlib=1  end
+power=0.00000001 burn=0.03125 nlib=1  end
+power=0.00000001 burn=0.0625 nlib=1  end
+power=0.00000001 burn=0.125 nlib=1  end
+power=0.00000001 burn=0.25 nlib=1  end
+power=0.00000001 burn=0.5 nlib=1  end
+power=0.00000001 burn=1.0 nlib=1  end
+power=0.00000001 burn=2.0 nlib=1  end
+power=0.00000001 burn=4.0 nlib=1  end
+power=0.00000001 burn=8.0 nlib=1  end
+power=0.00000001 burn=16.0 nlib=1  end
+power=0.00000001 burn=32.0 nlib=1  end
+power=0.00000001 burn=64.0 nlib=1  end
+
+end burndata
+
+read timetable
+flow
+from 1
+to 2
+type fractional_removal
+units pers
+nuclides H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk end
+rates 1 1  1  1  1 1 1 1 1 1  1  1  1  1  1 1 1  1  1 1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 1  1  1  1  1  end
+time 0.0 end
+multiplier 0.001 end
+end flow
+end timetable
+
+read model
+read parm
+npg=100 gen=10
+end parm
+
+read geom
+global unit 1
+cuboid 1 0 100 0 100 0 10
+cuboid 2 0 100 0 100 0 20
+media 1 1 1 
+media 2 1 2 -1
+boundary 2
+end geom
+
+read bounds
+all=vacuum
+end bounds
+end model
+end
+
